@@ -12,22 +12,23 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-
+Bank's homepage, as well as account creation page, with a form for filling out. After filling out the form as requested, the third page for photograph to capture an image as a final account registration. After capturing the image, the fourth page confirms that your account has been created.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
-- `Feature 1`: 
-- `Feature 2`: 
-- `Feature 3`: 
+- `Feature 1`: Development of 4 different pages for the bank's website, namely the homepage, form page, image capture page, and account opening confirmation page.
+- `Feature 2`: Form verification and validation are done via JavaScript, considering only valid data and providing error messages if something is missing or incorrect in any field.
+- `Feature 3`: Buttons for capturing images are inserted into the project, with a method to activate the live camera and take the photo, as well as saving the information in local storage as the final step for account opening.
+- `Feature 4`: Responsive website, designed for various screen sizes.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
 Project requirements:
  - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://alura-plus-plum-two-57.vercel.app) and have fun:
+Access the project hosted [here](https://monibank-theta-ten.vercel.app) and have fun:
  - Project hosted on Vercel.
- - Easy implementation, [click](https://alura-plus-plum-two-57.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+ - Easy implementation, [click](https://monibank-theta-ten.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
 
 Have the code on your computer:
  - Access the project source code [here](https://github.com/victorhubarb/monibank) or download the project [here](https://github.com/victorhubarb/monibank/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
