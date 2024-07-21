@@ -12,14 +12,22 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-Bank's homepage, as well as account creation page, with a form for filling out. After filling out the form as requested, the third page for photograph to capture an image as a final account registration. After capturing the image, the fourth page confirms that your account has been created.
+Monibank is a simulated banking interface designed to showcase a dynamic web application built using HTML, CSS, and JavaScript. This project provides a realistic depiction of a bank's website, featuring various interactive components and pages that guide users through different banking services and account creation processes. Monibank aims to deliver a comprehensive online banking experience, from exploring services to completing account registration with advanced validation and facial recognition steps.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
-- `Feature 1`: Development of 4 different pages for the bank's website, namely the homepage, form page, image capture page, and account opening confirmation page.
-- `Feature 2`: Form verification and validation are done via JavaScript, considering only valid data and providing error messages if something is missing or incorrect in any field.
-- `Feature 3`: Buttons for capturing images are inserted into the project, with a method to activate the live camera and take the photo, as well as saving the information in local storage as the final step for account opening.
-- `Feature 4`: Responsive website, designed for various screen sizes.
+- **Interactive Navigation Bar**: Includes clickable links for about the bank, services, account login, and account creation, along with a search field.
+- **Dynamic Content Sections**: 
+  - **Main Banner**: Showcases promotional content about the bank's offerings.
+  - **Services Section**: Displays three cards representing the primary services: credit card, checking account, and corporate account.
+  - **Call to Action Banner**: Encourages users to create an account with the bank.
+  - **Advantages Section**: Highlights the benefits of banking with Monibank using text and images.
+- **Functional Account Creation**:
+  - **Account Opening Form**: Users can initiate the account creation process by filling out a form with personal details, including validation for correct input formats and legal age verification.
+  - **Facial Recognition Step**: Guides users through a facial recognition process using their computer's camera to take a photo for identity verification.
+  - **Confirmation Page**: Displays a success message and a QR code for downloading the bank's mobile app after account creation.
+- **Footer**: Contains links to various bank resources including FAQs, career opportunities, and social media platforms.
+- **JavaScript-driven Logic**: Custom error messages and input validations enhance the user experience by ensuring all form data meets specified requirements.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
