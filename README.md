@@ -31,20 +31,26 @@ Monibank is a simulated banking interface designed to showcase a dynamic web app
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
-Project requirements:
- - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://monibank-theta-ten.vercel.app) and have fun:
- - Project hosted on Vercel.
- - Easy implementation, [click](https://monibank-theta-ten.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+### Prerequisites
+- **Integrated Development Environment (IDE)**: Ensure you have your preferred IDE installed, such as Visual Studio Code, to manage and edit the project files.
 
-Have the code on your computer:
- - Access the project source code [here](https://github.com/victorhubarb/monibank) or download the project [here](https://github.com/victorhubarb/monibank/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
+### Online Access
+- **Live Demo**: Experience Monibank directly through its hosted version on Vercel:
+  - [Visit Monibank](https://monibank-theta-ten.vercel.app) to explore the platform's features and interface.
 
-Clone repository with the following steps:
- 1. Open the terminal
- 2. git clone https://github.com/victorhubarb/monibank.git
- 3. Press ENTER to create your clone
+### Local Setup
+- **Access and Download the Source Code**:
+  - View the [Monibank GitHub repository](https://github.com/victorhubarb/monibank) to access the source code.
+  - To download the project directly, [click here](https://github.com/victorhubarb/monibank/archive/refs/heads/main.zip), unzip the file after download, and open it in your IDE.
+
+- **Clone the Repository**:
+  ```bash
+  # Open your terminal
+  git clone https://github.com/victorhubarb/monibank.git
+  cd monibank
+  
+  # Now you are ready to work on the project locally.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Technologies Used
