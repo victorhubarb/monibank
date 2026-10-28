@@ -36,7 +36,6 @@ styles/                 Shared, landing page and form styles
 ## Known gaps
 
 - The photo is only captured, not analyzed. There is no face verification.
-- Custom error messages for an invalid CPF and for under-18 users never appear. The loop checks the key `CustomError` while the browser reports `customError`, so those two cases show a blank message.
 - The form data and the photo are kept unencrypted in `localStorage`. That is fine for a demo and not something to do with real personal data.
 - The header links are placeholders.
 
