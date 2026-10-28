@@ -1,47 +1,45 @@
-# Monibank <a name="readme-top"></a>
-![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
+# Monibank
 
-## Introduction
-**Monibank** is a banking interface simulation developed to demonstrate a dynamic web application using HTML, CSS, and JavaScript. The project aims to provide a realistic experience of a banking website, with interactive components and pages that guide users through different banking services and account creation processes.
+A three-step account-opening flow for a fictional digital bank, in HTML, CSS and vanilla JavaScript. You fill in a registration form with real validation, take a photo with your webcam, and reach a confirmation page. There is also a landing page that promotes the bank.
 
-## Live Application
-[Monibank Demonstration](https://monibank-theta-ten.vercel.app)
+**Live demo:** [monibank-theta-ten.vercel.app](https://monibank-theta-ten.vercel.app)
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Contributors](#contributors)
+## What's inside
 
-## Installation
+- **Form validation without a library.** Each required field is checked on `blur` with the browser's Constraint Validation API, and a message from a lookup table is shown under the field. Name, email, RG and the terms checkbox use patterns and types.
+- **CPF check.** `valida-cpf.js` implements the Brazilian CPF algorithm: it rejects repeated-digit numbers and verifies both check digits.
+- **Age check.** `valida-idade.js` blocks anyone under 18, based on the birth date.
+- **Webcam capture.** `camera.js` asks for camera access with `getUserMedia`, shows the live video, draws a frame onto a `<canvas>` when you click, and keeps the image as a JPEG data URL.
+- **Multi-step state.** The answers from step 1 are stored in `localStorage`, and step 2 adds the photo to the same record before moving on to step 3. The scripts are ES modules.
 
-### Prerequisites
-- A code editor like Visual Studio Code
-- Web browser
+The interface is in Portuguese. This is a simulation, so the registration is never sent to a server.
 
-### Steps to run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/victorhubarb/monibank.git
-   cd monibank
-   ```
-2. Open the `index.html` file in your browser to view the website.
+## Run it
 
-## Usage
-Access Monibank through your local installation or via the online version. The interface includes navigation through different banking services, account creation with data validation, and even facial recognition for identity verification.
+The camera only works on `localhost` or HTTPS, and ES modules need a server, so use one:
 
-## Features
-- **Interactive Navigation Bar**: Links to information about the bank, services, login and account creation.
-- **Account Creation**: Form for opening an account with validations and verification steps.
-- **Promotional Banner**: Highlights the banking services offered.
-- **Facial Recognition**: Photo verification for account opening.
+```bash
+git clone https://github.com/victorhubarb/monibank.git
+cd monibank
+python3 -m http.server 8000     # then open http://localhost:8000
+```
 
-## Technologies
-- **HTML5**
-- **CSS3**
-- **JavaScript**
+## Project structure
 
-## Contributors
-- [Victor Barbosa](https://github.com/victorhubarb)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
+index.html              Landing page
+pages/                  The three steps of the sign-up flow
+js/                     script.js, valida-cpf.js, valida-idade.js, camera.js
+styles/                 Shared, landing page and form styles
+```
+
+## Known gaps
+
+- The photo is only captured, not analyzed. There is no face verification.
+- Custom error messages for an invalid CPF and for under-18 users never appear. The loop checks the key `CustomError` while the browser reports `customError`, so those two cases show a blank message.
+- The form data and the photo are kept unencrypted in `localStorage`. That is fine for a demo and not something to do with real personal data.
+- The header links are placeholders.
+
+---
+
+Victor Hugo Barbosa · [GitHub](https://github.com/victorhubarb) · [LinkedIn](https://www.linkedin.com/in/victorhbarbosa/)
