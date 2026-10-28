@@ -4,6 +4,10 @@ A three-step account-opening flow for a fictional digital bank, in HTML, CSS and
 
 **Live demo:** [monibank-theta-ten.vercel.app](https://monibank-theta-ten.vercel.app)
 
+| Landing page | Form with validation errors |
+|---|---|
+| ![Monibank landing page](docs/landing.png) | ![Monibank sign-up form showing CPF and age validation messages](docs/form-validation.png) |
+
 ## What's inside
 
 - **Form validation without a library.** Each required field is checked on `blur` with the browser's Constraint Validation API, and a message from a lookup table is shown under the field. Name, email, RG and the terms checkbox use patterns and types.
